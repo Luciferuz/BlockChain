@@ -2,6 +2,10 @@ package org.antsiferov;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello Block");
+        Node node = new Node(args[0], Integer.parseInt(args[1]));
+        node.run();
+        while (true) {
+            node.createBlock();
+        }
     }
 }
